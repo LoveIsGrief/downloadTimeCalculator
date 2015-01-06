@@ -1,0 +1,25 @@
+{
+  "name": "DownloadTimeCalculator",
+  "version": "0.0.0",
+  "authors": [
+    "LoveIsGrief <LoveIsGrief@users.noreply.github.com>"
+  ],
+  "description": "How long will it take to download something?",
+  "keywords": [
+    "time",
+    "speed",
+    "calculator"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "duration.js": "~3.3.4"
+  }
+}

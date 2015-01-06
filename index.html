@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<script src="http://sugarjs.com/release/current/sugar.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+	<script src="bower_components/duration.js/duration.js"></script>
+	<script src="calculator.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body ng-app="calculatorApp">
+
+	<div ng-controller="CalculatorController">
+		<fieldset>
+			<legend>Size</legend>
+			<input type="text" ng-model="size" ></input>
+			<select ng-model="selectedSizeUnit"
+				ng-options="unit as unit.label for unit in units"
+				>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Speed</legend>
+			<input type="text" ng-model="speed" ></input>
+			<select ng-model="selectedSpeedUnit"
+				ng-options="unit as unit.label for unit in units"
+				>
+			</select><span>per second</span>
+		</fieldset>
+		<fieldset>
+			<legend>Result:</legend>
+			<p>{{timeToDownload()}}</p>
+		</fieldset>
+	</div>
+	<p><a href="https://en.wikipedia.org/wiki/Megabit">bits vs bytes</a></p>
+</body>
+</html>
+
+
+
